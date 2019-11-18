@@ -1,0 +1,14 @@
+create database DBSemana16
+
+use DBSemana16
+
+create table Usuario(
+UsuarioID int primary key not null identity,
+UsuarioNom varchar(50) not null,
+UsuarioContraseña varchar(100) not null)
+
+INSERT INTO Usuario (UsuarioNom,UsuarioContraseña) VALUES ( 'Cristopher','Tecsup1')
+INSERT INTO Usuario (UsuarioNom,UsuarioContraseña) VALUES ( 'Leidy','Tecsup2')
+INSERT INTO Usuario (UsuarioNom,UsuarioContraseña) VALUES ( 'Piero','Tecsup3')
+
+SELECT * FROM Usuario
