@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+    if (Session["usuarioID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Usuario: @Session["usuarioNom"].ToString()</h2>
+        <a href="@Url.Action("CerrarSesion","Login")">Cerrar Sesión</a>
+
+        <h4>AQUI VA LA TABLA Y TODO LO DEMAS</h4>
+    </div>
+</body>
+</html>

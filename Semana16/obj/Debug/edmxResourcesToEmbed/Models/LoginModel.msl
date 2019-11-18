@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBSemana16ModelStoreContainer" CdmEntityContainer="DBSemana16Entities">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="DBSemana16Model.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="UsuarioNom" ColumnName="UsuarioNom" />
+          <ScalarProperty Name="UsuarioContraseña" ColumnName="UsuarioContraseña" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
